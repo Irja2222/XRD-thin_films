@@ -1,0 +1,8 @@
+è una lega: non sono fasi separate, sono un'unica fase
+la cosa importante è che il fascio è parallelo non tanto che stiamo in 2theta
+vediamo soltanto la diffrazione dei piani paralleli perché deve essere valida la legge di Bragg, dunque se vogliamo vedere piani tiltati dobbiamo cambiare theta-2theta
+non avere orientazioni preferenziali vuol dire avere al massimo 1 orientazione (SC)
+basta la minima orientazione che si esce fuori da Bragg
+rocking vuol dire cullare: dunque stiamo facendo oscillare il campione attorno a un picco
+hkil sono indice di Miller per celle esagonali: cercati le conversioni a hkl
+rocking curve è un omega-scan per centrato in un picco
