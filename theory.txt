@@ -5,4 +5,4 @@ non avere orientazioni preferenziali vuol dire avere al massimo 1 orientazione (
 basta la minima orientazione che si esce fuori da Bragg
 rocking vuol dire cullare: dunque stiamo facendo oscillare il campione attorno a un picco
 hkil sono indice di Miller per celle esagonali: cercati le conversioni a hkl
-rocking curve è un omega-scan per centrato in un picco
+rocking curve è un omega-scan però centrato in un picco

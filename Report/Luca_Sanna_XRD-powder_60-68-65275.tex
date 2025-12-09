@@ -1,0 +1,89 @@
+\documentclass[a4paper,twocolumn,12 pt]{article}
+\usepackage{silence}  % pacchetto che permette di sopprimere warnings cagacazzo
+\WarningFilter{latex}{`h' float specifier changed to `ht'}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,italian]{babel}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{animate}
+\usepackage{csquotes}
+\usepackage{biblatex}
+\usepackage{xurl}   % compatta gli url
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage[font=footnotesize, labelfont=bf]{caption}
+% \usepackage[LGRgreek]{mathastext}
+\usepackage{esint}
+\makeatletter
+% make esint definition in line with amsmath
+\@for\next:={int,iint,iiint,iiiint,dotsint,oint,oiint,sqint,sqiint,
+  ointctrclockwise,ointclockwise,varointclockwise,varointctrclockwise,
+  fint,varoiint,landupint,landdownint}\do{%
+    \expandafter\edef\csname\next\endcsname{%
+      \noexpand\DOTSI
+      \expandafter\noexpand\csname\next op\endcsname
+      \noexpand\ilimits@
+    }%
+  }
+\makeatother
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{subdepth}
+
+\addbibresource{citations.bib}
+\hbadness=1000000
+
+\pagestyle{plain}
+
+\title{\textbf{Individuazione di piani diffrattivi su misure XRD di film sottili}}
+\author{\textbf{Luca Sanna, 60/68/65275}}
+\date{\textbf{10/12/2025}}
+
+
+\begin{document}
+\twocolumn[
+\maketitle
+  \begin{@twocolumnfalse}\maketitle
+        \begin{abstract}\noindent
+
+        \end{abstract}
+  \end{@twocolumnfalse}
+]
+
+\raggedbottom
+\section*{Introduzione}
+
+
+\section*{Esperimento}
+
+
+\section*{Risultati}
+
+
+
+\section*{Conclusioni}
+
+
+
+\onecolumn
+\newpage
+% \printbibliography
+
+
+\end{document}
