@@ -159,6 +159,19 @@ def compute_peaks():
             print("For sample " + files[dataset][:-3] + ", peaks are ({} +- {}) [deg] and ({} +- {}) [deg].".format(round(peaks[dataset][0], 2), round(peaks_err[dataset][0], 2), round(peaks[dataset][1], 2), round(peaks_err[dataset][1], 2)))
         else:
             print("For sample " + files[dataset][:-3] + ", peak is ({} +- {}) [deg].".format(round(peaks[dataset], 2), round(peaks_err[dataset], 2)))
+    
+    peaks_flat = []
+    peaks_err_flat = []
+    for sample in range(len(peaks)):
+        if sample == 4:
+            peaks_flat.append(peaks[sample][0])
+            peaks_flat.append(peaks[sample][1])
+            peaks_err_flat.append(peaks_err[sample][0])
+            peaks_err_flat.append(peaks_err[sample][1])
+        else:
+            peaks_flat.append(peaks[sample])
+            peaks_err_flat.append(peaks_err[sample])
+    return np.array(peaks_flat), np.array(peaks_err_flat)
 
 
 ######################################################
@@ -231,7 +244,7 @@ def plot_allofit(datasets, savename = ""):
 # (h, k, i, l)  ----> (h, k, l)
 # h = h, k = k, i = - (h + k), l = l
 ######################################################
-def compute_millers():
+def compute_millers(peaks_flat, peaks_err_flat):
     hexs = np.array([[1, 1, 2, 0],
         [0, 0, 0, 1],
         [1, 0, 1, 0],
@@ -248,6 +261,30 @@ def compute_millers():
                 k += 1
     print("Hexagonals:\n", hexs)
     print("Millers:\n", Millers)
+    ######################################################
+    # Hexagonal indexes to Miller indexes.
+    # Spatial group: R-3c:H
+    # A: [2 -1 0] = 37.762°
+    # C: [0 0 6] = 41.670°
+    # M: [3 0 0] = 68.180°
+    # N: [1 1 3] = 43.5°
+    # R: [1 0 -2] = 25.568°
+    # R: [2 0 -4] = 52.534°
+    # delta2theta = 0.1°
+    ######################################################
+    Millers_exp = np.array([37.762, 41.670, 68.180, 43.5, 25.568, 52.534, 43.5])
+    Millers_exp_err = 0.1
+    Millers_exp_rel = np.max(Millers_exp_err / Millers_exp * 100)
+    print("The max value for expected Millers relative error is {}%.".format(round(Millers_exp_rel, 4)))
+    peaks_rel = np.max(peaks_err_flat / peaks_flat * 100)
+    print("The max value for experimental Millers relative error is {}%.".format(round(peaks_rel, 4)))
+    coincidence_checks = 0
+    for index in range(len(Millers_exp)):
+        if (Millers_exp[index] - Millers_exp_err) - (peaks_flat[index] + peaks_err_flat[index]) < 0 or (peaks_flat[index] - peaks_err_flat[index]) - (Millers_exp[index] + Millers_exp_err) < 0:
+            coincidence_checks += 1
+    if coincidence_checks == len(Millers_exp):
+        print("All discrepancies check out!")
+
 
 
 
@@ -257,9 +294,9 @@ def compute_millers():
 
 if __name__ == "__main__":
     plot_everything(False)
-    compute_peaks()
+    peaks_flat, peaks_err_flat = compute_peaks()
     plot_allofit(datasets)
     for dataset in range(len(datasets)):
         datasets[dataset][:, 1] = datasets[dataset][:, 1] / np.max(datasets[dataset][:, 1])
     plot_allofit(datasets, savename = "_normalized")
-    compute_millers()
+    compute_millers(peaks_flat, peaks_err_flat)
