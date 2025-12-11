@@ -61,14 +61,26 @@
 \maketitle
   \begin{@twocolumnfalse}\maketitle
         \begin{abstract}\noindent
-          L'obiettivo dell'esperienza di laboratorio è studiare il diffrattogramma XRD, ottenuto secondo geometria Bragg-Brentano, di sei diversi film sottili in allumina-$\alpha$ (Al$_2$O$_3$), comunemente chiamata zaffiro, in fase di cristallo singolo, con il fine di stimare le rispettive orientazioni privilegiate.
+          L'obiettivo dell'esperienza di laboratorio è studiare il diffrattogramma XRD, ottenuto secondo geometria Bragg-Brentano, di sei diversi film sottili in allumina-$\alpha$ (Al$_2$O$_3$), comunemente chiamata zaffiro, in fase di cristallo singolo, con il fine di stimare le rispettive orientazioni privilegiate. Di nota, si è identificato, per il campione di denominazione III, l'orientazione M, di indici di Miller $\left( 3 \ 0 \ 0 \right)$, ad un angolo di diffrazione di $\left( 68.23 \pm 0.07 \right)~deg$, che, entro l'incertezza, è confrontabile con le stime osservate in letteratura.
         \end{abstract}
   \end{@twocolumnfalse}
 ]
 
 \raggedbottom
 \section*{Introduzione}
-(Legge di von Laue)
+La tecnica di indagine XRD (X-Rays Diffraction) fa uso dell'interazione radiazione-materia che scaturisce tra luce incidente X e un campione in fase cristallina. Poiché le tipiche distanze interatomiche per un cristallo sono comparabili con le lunghezze d'onda $\lambda$ della radiazione X ($\approx 1-10~\text{\AA}$), vi sono le condizioni perché il fenomeno della diffrazione avvenga.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width = 1\linewidth]{../von_Laue.png}
+  \caption{Schema esemplificativo della legge di von Laue.}
+  \label{fig: von Laue}
+\end{figure}
+
+Usando la figura \ref{fig: von Laue} come riferimento, il fascio luminoso segue la direzione di incidenza, definita dal vettore d'onda $\vec{k}_{in} = 2\pi/\lambda$ e dall'angolo di incidenza $\vartheta$, e interagisce con i piani, costituenti il campione. Il fascio risultante segue dunque la direzione di diffrazione, definita dal vettore d'onda $\vec{k}_{out}$ e dall'angolo $2\vartheta$. La differenza di cammino ottico tra i due percorsi che compie la luce, interagendo tra due generici atomi del reticolo, la cui distanza è definita dal vettore reticolare $\vec{R}$, interferiscono costruttivamente se è rispettata la seguente condizione:
+\begin{equation}
+  \left(\vec{k}_{out} - \vec{k}_{in}\right) \circ \vec{R} = 2 \pi m
+\end{equation}
+dove $m \in \mathbb{N}$ è l'ordine diffrattivo (si considera il prim'ordine perché il più intenso).
 
 
 \section*{Esperimento}

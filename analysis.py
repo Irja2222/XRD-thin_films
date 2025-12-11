@@ -293,10 +293,10 @@ def compute_millers(peaks_flat, peaks_err_flat):
 
 
 if __name__ == "__main__":
-    plot_everything(False)
+    # plot_everything(False)
     peaks_flat, peaks_err_flat = compute_peaks()
-    plot_allofit(datasets)
-    for dataset in range(len(datasets)):
-        datasets[dataset][:, 1] = datasets[dataset][:, 1] / np.max(datasets[dataset][:, 1])
-    plot_allofit(datasets, savename = "_normalized")
+    # plot_allofit(datasets)
+    # for dataset in range(len(datasets)):
+    #     datasets[dataset][:, 1] = datasets[dataset][:, 1] / np.max(datasets[dataset][:, 1])
+    # plot_allofit(datasets, savename = "_normalized")
     compute_millers(peaks_flat, peaks_err_flat)
