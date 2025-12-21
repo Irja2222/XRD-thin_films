@@ -71,19 +71,82 @@
 La tecnica di indagine XRD (X-Rays Diffraction) fa uso dell'interazione radiazione-materia che scaturisce tra luce incidente X e un campione in fase cristallina. Poiché le tipiche distanze interatomiche per un cristallo sono comparabili con le lunghezze d'onda $\lambda$ della radiazione X ($\approx 1-10~\text{\AA}$), vi sono le condizioni perché il fenomeno della diffrazione avvenga.
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width = 1\linewidth]{../von_Laue.png}
+  \includegraphics[width = 1\linewidth]{../Images/von_Laue.png}
   \caption{Schema esemplificativo della legge di von Laue.}
   \label{fig: von Laue}
 \end{figure}
 
-Usando la figura \ref{fig: von Laue} come riferimento, il fascio luminoso segue la direzione di incidenza, definita dal vettore d'onda $\vec{k}_{in} = 2\pi/\lambda$ e dall'angolo di incidenza $\vartheta$, e interagisce con i piani, costituenti il campione. Il fascio risultante segue dunque la direzione di diffrazione, definita dal vettore d'onda $\vec{k}_{out}$ e dall'angolo $2\vartheta$. La differenza di cammino ottico tra i due percorsi che compie la luce, interagendo tra due generici atomi del reticolo, la cui distanza è definita dal vettore reticolare $\vec{R}$, interferiscono costruttivamente se è rispettata la seguente condizione:
+Usando la figura \ref{fig: von Laue} come riferimento, il fascio luminoso segue la direzione di incidenza, definita dal vettore d'onda $\vec{k}_{in} = 2\pi/\lambda$ e dall'angolo di incidenza $\vartheta$, e interagisce con i piani costituenti il campione. Il fascio risultante segue dunque la direzione di diffrazione, definita dal vettore d'onda $\vec{k}_{out}$ e dall'angolo $2\vartheta$. La differenza di cammino ottico tra i due percorsi che compie la luce interagendo tra due generici atomi del reticolo, la cui distanza è definita dal vettore reticolare $\vec{R}$, interferiscono costruttivamente se è rispettata la seguente condizione:
 \begin{equation}
   \left(\vec{k}_{out} - \vec{k}_{in}\right) \circ \vec{R} = 2 \pi m
+  \label{eq: von Laue}
 \end{equation}
 dove $m \in \mathbb{N}$ è l'ordine diffrattivo (si considera il prim'ordine perché il più intenso).
 
+Il risultato della misura è un pattern d'intensità dei fotoni diffratti punto per punto sullo schermo di acquisizione. Gradi di simmetria differenti del cristallo corrispondono sistematicamente a pattern di diffrazione differenti. È intuitivo dunque modellizzare l'ambiente di predizione secondo un nuovo reticolo, sotto il nome di \emph{reticolo reciproco}, che schematizza, analogamente al reticolo diretto per i siti reticolari, i centri diffrattivi; anziché parlare di vettore reticolare, si fa riferimento a un \emph{vettore reticolare reciproco}, $G = 2\pi/d_{hkl}$, dove $d_{hkl}$ è la distanza interplanare che caratterizza la famiglia di piani, individuata dalla controparte reciproca degli indici planari diretti, gli \emph{indici di Miller}, $(h \ k \ l)$. Poiché questi numeri possono essere anche negativi, è convenzione scrivere, per un certo indice $j$, l'equivalenza $-j \equiv \overline{j}$.
+
+L'equazione \ref{eq: von Laue} assume così la forma:
+\begin{equation}
+  \vec{G} \circ \vec{R} = 2\pi m,
+  \label{eq: von Laue, G}
+\end{equation}
+e prende il nome di \emph{legge di Von Laue}.
+
+Gli indici di Miller non sono l'unico modo di contraddistinguere una famiglia di piani. Infatti, gli \emph{indici esagonali} sono convenzionalmente utilizzati per descrivere l'orientazione di famiglie di piani facenti parte reticoli di struttura, appunto, esagonale. La legge di conversione dagli indici di Miller $(h \ k \ l)$ agli indici esagonali $(h \ k \ i \ l)$ sia:
+\begin{equation}
+  \begin{split}
+    &h \longrightarrow h\\
+    &k \longrightarrow k\\
+    &i \longrightarrow -\left(h + k\right)\\
+    &l \longrightarrow l
+  \end{split}
+  \label{eq: hex}
+\end{equation}
+In definitiva, costruendo un grafico delle intensità dei fotoni diffratti in funzione dell'angolo di diffrazione, curva che prende il nome di \emph{diffrattogramma}, è possibile associare ad ogni picco una specifica combinazione di indici di Miller, e così la famiglia di piani di orientazione associata.
+
 
 \section*{Esperimento}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 1\linewidth]{../Images/sapphire-struct_upscaled_croped.png}
+  \caption{Orientazioni dei piani cristallografici funzionali dello zaffiro, di gruppo spaziale "R-3c:H"~\supercite{sapphire}.}
+  \label{fig: sapphire multi}
+\end{figure}
+I campioni osservati sono sei film sottili, in fase di singolo cristallo, di $\alpha$-allumina (Al$_2$O$_3$), materiale comunemente chiamato zaffiro, che differiscono nell'orientazione privilegiata della famiglia di piani caratterizzante; si identificano con le denominazioni I, II, III, IV, V, VI.
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.23\textwidth}
+        \centering
+        \includegraphics[width = 1\linewidth]{../Images/sapphire.png}
+        \caption*{(a)}
+    \end{minipage}%
+    \hspace{0.01\textwidth}
+    \begin{minipage}{0.23\textwidth}
+        \centering
+        \includegraphics[width = 1\linewidth]{../Images/Crystallographic-diagram-of-sapphire_upscaled_croped.png}
+        \vspace*{3.5mm}\caption*{(b)}
+    \end{minipage}
+    \caption{Struttura dello zaffiro, di gruppo spaziale "R-3c:H", con particolare attenzione alle orientazioni dei piani cristallografici A, C, M, R in figura (a)~\supercite{sapphireR}, e del piano cristallografico N in figura (b)~\supercite{sapphireN}.}
+    \label{fig: sapphire standing}
+\end{figure}
+
+Le figure \ref{fig: sapphire multi} e \ref{fig: sapphire standing} illustrano la struttura reticolare dello zaffiro studiato.
+
+Il gruppo di simmetria spaziale associato sia "R-3c:H" ($167$), in cui la dicitura ":H" identifica la disposizione esagonale (\emph{Hexagonal}) degli atomi nel reticolo. In particolare, la figura \ref{fig: sapphire multi} mette in evidenza i piani A, C, M e R, mentre la figura \ref{fig: sapphire standing} rimarca questi ultimi e introduce il piano N; si noti come non vi sia una combinazione unica di indici esagonali a definire una famiglia di piani, ma lo stesso piano è individuato da diverse possibili orientazioni.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width = 1\linewidth]{../Images/Gobel.png}
+  \caption{Schema strutturale di un XRD, secondo geometria di Bragg-Brentano e correzione della sorgente mediante specchio di G\"{o}bel.}
+  \label{fig: Gobel}
+\end{figure}
+
+Inoltre, casistica non visualizzabile nelle figure appena descritte, si associano, allo stesso piano, direzioni planari definite da indici di Miller che sono multipli di una combinazione irriducibile. Esempio calzante al lavoro di laboratorio affrontato, è l'orientazione $(3 \ 0 \ 0)$, che vanta $3$ volte lo spessore lungo la direzione $h$ dell'orientazione $(1 \ 0 \ 0)$.
+
+L'apparecchio strumentale utilizzato~\supercite{XRD:spec}, oltre a mettere a disposizione la geometria Bragg-Brentano, dispone dell'opzione di regolare la direzione del raggio incidente mediante specchi di G\"{o}bel. 
+
+Con riferimento alla figura \ref{fig: Gobel}, essi consentono di correggere la triettoria dispersiva della sorgente e convogliarla sul campione in un flusso parallelo; è così possibile sondare, in particolare un film sottile in fase di singolo cristallo, con i vantaggi~\supercite{gobel} di un'intensità maggiore del fascio incidente sul sito di osservazione, un rateo segnale-rumore più elevato, l'aggiustamento più semplice e rapido del campione all'interno del sistema di misura e la soppressione effettiva di radiazione estranea.
+
+Perché però si rendono necessari? La radiazione X non può essere riflessa tramite i comuni specchi in vetro, a causa dell'incompatibilità tra lunghezza d'onda e morfologia del materiale; è dunque necessario ricorrere a dispositivi ottici che riescano a sfruttare la \emph{riflessione di Bragg}, ovvero che siano in grado di applicare le condizioni che soddisfano l'omonima legge. Al fine di ottimizzare questo processo, si fa uso inoltre di una combinazione di \emph{fenditure di Soller} e fenditure allineatrici, sia in incidenza sia in diffrazione.
 
 
 \section*{Risultati}
@@ -96,7 +159,7 @@ dove $m \in \mathbb{N}$ è l'ordine diffrattivo (si considera il prim'ordine per
 
 \onecolumn
 \newpage
-% \printbibliography
+\printbibliography
 
 
 \end{document}

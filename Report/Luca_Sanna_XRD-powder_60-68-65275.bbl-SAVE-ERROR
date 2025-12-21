@@ -1,0 +1,96 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{XRD:spec}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c7c155f45c39c261130b8b428a2749aa}{%
+           family={Bruker},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{fullhash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{fullhashraw}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{bibnamehash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{authorbibnamehash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{authornamehash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{authorfullhash}{c7c155f45c39c261130b8b428a2749aa}
+      \strng{authorfullhashraw}{c7c155f45c39c261130b8b428a2749aa}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 04/12/2025}
+      \field{title}{The D8 ADVANCE: A single solution for XRD, PDF and SAXS}
+      \verb{urlraw}
+      \verb https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/x-ray-diffractometers/d8-advance-family/d8-advance.html
+      \endverb
+      \verb{url}
+      \verb https://www.bruker.com/en/products-and-solutions/diffractometers-and-x-ray-microscopes/x-ray-diffractometers/d8-advance-family/d8-advance.html
+      \endverb
+    \endentry
+    \entry{sapphire}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=8c50c0cac99fec6a6d1fd61f6ce2304a}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Suk\bibnamedelima Bum},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=152fccfb2edb3b6bc8b6c453a5909b58}{%
+           family={Nagaraj},
+           familyi={N\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e42b4a1ed24ac149cfbb1b69d2aef779}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Hae-Sung},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=706342c1e84297243898ae9fd6f2df6d}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Sangkee},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f7dc1a51935d3a058c711c0fc2aec0f}
+      \strng{fullhash}{4f39c92b6a9a7015d46c65191a86a92f}
+      \strng{fullhashraw}{4f39c92b6a9a7015d46c65191a86a92f}
+      \strng{bibnamehash}{5f7dc1a51935d3a058c711c0fc2aec0f}
+      \strng{authorbibnamehash}{5f7dc1a51935d3a058c711c0fc2aec0f}
+      \strng{authornamehash}{5f7dc1a51935d3a058c711c0fc2aec0f}
+      \strng{authorfullhash}{4f39c92b6a9a7015d46c65191a86a92f}
+      \strng{authorfullhashraw}{4f39c92b6a9a7015d46c65191a86a92f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nanotechnology and Precision Engineering}
+      \field{month}{07}
+      \field{title}{Study of material removal behavior on R-plane of sapphire during ultra-precision machining based on modified slip-fracture model}
+      \field{volume}{3}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1016/j.npe.2020.07.001
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
