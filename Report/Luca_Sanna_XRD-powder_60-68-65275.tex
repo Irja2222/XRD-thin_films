@@ -51,9 +51,9 @@
 
 \pagestyle{plain}
 
-\title{\textbf{Studio dell'orientazione di cristalli singoli in zaffiro}}
+\title{\textbf{Studio dell'orientazione di film sottili, in fase di cristallo singolo, in zaffiro}}
 \author{\textbf{Luca Sanna, 60/68/65275}}
-\date{\textbf{10/12/2025}}
+\date{\textbf{22/12/2025}}
 
 
 \begin{document}
@@ -140,7 +140,15 @@ Il gruppo di simmetria spaziale associato sia "R-3c:H" ($167$), in cui la dicitu
   \label{fig: Gobel}
 \end{figure}
 
-Inoltre, casistica non visualizzabile nelle figure appena descritte, si associano, allo stesso piano, direzioni planari definite da indici di Miller che sono multipli di una combinazione irriducibile. Esempio calzante al lavoro di laboratorio affrontato, è l'orientazione $(3 \ 0 \ 0)$, che vanta $3$ volte lo spessore lungo la direzione $h$ dell'orientazione $(1 \ 0 \ 0)$.
+Inoltre, casistica non visualizzabile nelle figure appena descritte, si associano, allo stesso piano, direzioni planari definite da indici di Miller che sono multipli di una combinazione irriducibile.
+\begin{figure*}[t!]
+    \centering
+    \includegraphics[width = 1\linewidth]{../plot_allofit_normalized.pdf}
+    \caption{Diffrattogrammi XRD, acquisiti secondo geometria Bragg-Brentano, di film sottili di zaffiro, in fase di singolo cristallo; necessitano di particolare attenzione i campioni IV e VI che condividono la stessa orientazione N.}
+    \label{fig: plots}
+\end{figure*}
+
+\noindent Esempio calzante al lavoro di laboratorio affrontato, è l'orientazione $(3 \ 0 \ 0)$, che vanta $3$ volte lo spessore lungo la direzione $h$ dell'orientazione $(1 \ 0 \ 0)$.
 
 L'apparecchio strumentale utilizzato~\supercite{XRD:spec}, oltre a mettere a disposizione la geometria Bragg-Brentano, dispone dell'opzione di regolare la direzione del raggio incidente mediante specchi di G\"{o}bel. 
 
@@ -150,16 +158,82 @@ Perché però si rendono necessari? La radiazione X non può essere riflessa tra
 
 
 \section*{Risultati}
+Il primo passo, al fine di associare a una determinata famiglia di piani un picco diffrattivo, è individuare l'angolo di diffrazione associato; l'errore sulla stima è considerato come larghezza a mezza altezza, considerando la maggiore delle due distanze in $2\vartheta$ tra massimo e metà altezze, in caso di forma asimmetrica del picco.
+\begin{table}[htbp]\setlength\belowcaptionskip{-5pt}
+    \centering
+\begin{tabular}{cc}
+    \hline
+    \textbf{campione} & $\mathbf{2\vartheta}$ ($deg$)\\
+    \hline
+    I & $37.81 \pm 0.05$\\
+    II & $41.75 \pm 0.03$\\
+    III & $68.23 \pm 0.07$\\
+    IV & $43.44 \pm 0.04$\\
+    \multirow{2}{*}{V} & $25.65 \pm 0.06$\\
+    & $52.60 \pm 0.05$\\
+    VI & $43.32 \pm 0.02$\\
+    \hline
+\end{tabular}
+\caption{Picchi di diffrazione film sottili, in fase di singolo cristallo, di zaffiro di gruppo spaziale "R-3c:H".}
+\label{tab: picchi}
+\end{table}
 
+La tabella \ref{tab: picchi} elenca le stime effettuate. L'atto successivo è confrontare i grafici rilevati con diffrattogrammi in letteratura di polveri dello stesso materiale. Infatti, per definizione, una polvere è idealmente un agglomerato di infiniti cristalliti, ed è dotata di infinite orientazioni casuali; per questo motivo, da un singolo diffrattogramma, è potenzialmente possibile ottenere un'informazione completa su tutte le direzioni planari che caratterizzano un campione. Si accede dunque a un database~\supercite{cod} di file ".cif" (Crystallographic Information File) e si ricercano le pubblicazioni che corrispondono al materiale di interesse; per l'Al$_2$O$_3$, di gruppo spaziale
+"R-3c:H", si è usufruito delle misure identificate dai "COD ID" $1000017$ e $1000032$, osservate tramite il software di analisi cristallografica \emph{Mercury}~\supercite{mercury}.
+\begin{table}[htbp]\setlength\belowcaptionskip{-5pt}
+    \centering
+\begin{tabular}{ccc}
+    \hline
+    \multirow{2}{*}{$\mathbf{2\vartheta}$ ($deg$)} & \textbf{indici} & \textbf{indici}\\
+    & \textbf{di Miller} & \textbf{esagonali}\\
+    \hline
+    $37.8 \pm 0.1$ & $(2 \ \overline{1} \ 0)$ & $(2 \ \overline{1} \ \overline{1} \ 0)$\\
+    $41.7 \pm 0.1$ & $(0 \ 0 \ 6)$ & $(0 \ 0 \ 0 \ 6)$\\
+    $68.2 \pm 0.1$ & $(3 \ 0 \ 0)$ & $(3 \ 0 \ \overline{3} \ 0)$\\
+    $43.3 \pm 0.1$ & $(2 \ \overline{1} \ 3)$ & $(2 \ \overline{1} \ \overline{1} \ 3)$\\
+    $25.6 \pm 0.1$ & $(1 \ 0 \ \overline{2})$ & $(1 \ 0 \ \overline{1} \ 2)$\\
+    $52.5 \pm 0.1$ & $(2 \ 0 \ \overline{4})$ & $(2 \ 0 \ \overline{2} \ 4)$\\
+    $43.3 \pm 0.1$ & $(2 \ \overline{1} \ 3)$ & $(2 \ \overline{1} \ \overline{1} \ 3)$\\
+    \hline
+\end{tabular}
+\caption{Picchi di diffrazione di polveri in zaffiro, di gruppo spaziale "R-3c:H", e orientazioni privilegiate associate.}
+\label{tab: orientazioni}
+\end{table}
+
+La tabella \ref{tab: orientazioni} elenca gli esiti delle ricerche; come anticipato nella sezione \emph{Esperimento}, si consti la presenza di orientazioni che possiedono indici di Miller non irriducibili. Comparando la tabella \ref{tab: picchi}, la tabella \ref{tab: orientazioni}, e le figure \ref{fig: sapphire multi} e \ref{fig: sapphire standing}, si ottiene infine la figura \ref{fig: plots}.
+
+Si noti in primo luogo la presenza sia dell'emissione K$\alpha$ che di quella K$\beta$; per convenzione, si è valutata soltanto la prima al fine di determinare i picchi diffrattivi.
+
+È inoltre importante sottolineare come i massimi di intensità dei campioni IV e VI quasi si sovrappongono; per questo motivo, si è considerato sufficiente indicare la rispettiva orientazione N una sola volta.
+
+Andando oltre con lo studio del grafico \ref{fig: plots}, i diffrattogrammi dei campione III e VI colgono l'attenzione a causa di un background significativamente rumoroso. Poiché si è scelto di normalizzare tutte le curve ai rispettivi massimi, si perde l'informazione sull'effettivo numero dei conteggi; infatti, i grafici in questione vantano picchi di rispettivamente $\approx 0.5 \ counts$ e $\approx 1.5 \ counts$, a indice della qualità non ottimale delle misure (in appendice sarà disponibile il grafico \ref{fig: plots} grezzo).
+
+In conclusione, si distingue il campione V perché manifesta due diversi picchi diffrattivi per la stessa orientazione R; si individua la differenza nella molteplicità doppia, nelle direzioni $h$ e $l$, del piano $(2 \ 0 \ \overline{4})$ rispetto al piano $(1 \ 0 \ \overline{2})$.
 
 
 \section*{Conclusioni}
+L'obiettivo dell'esperienza di laboratorio è stato rilevare i diffrattogrammi XRD di sei film sottili di zaffiro, in fase di singolo cristallo, diversi per orientazione privilegiata. Successivamente, si è posto il problema di riconoscere, nei picchi diffrattivi ottenuti, le direzioni planari tipiche del gruppo spaziale del campione, "R-3c:H", tramite confronto con i dati in letteratura.
 
+La comparazione tra la tabella \ref{tab: picchi} e la tabella \ref{tab: orientazioni} permette di affermare che i valori osservati sperimentalmente e ricercati in letteratura sono confrontabili entro i rispettivi errori di misura; inoltre, errori relativi massimi di rispettivamente $0.39 \%$ e $0.24 \%$ sostengono la validità di questa corrispondenza. Essa ha ulteriormente concesso di poter individuare con precisione sufficiente, seguendo gli schemi dettati dalle figure \ref{fig: sapphire multi} e \ref{fig: sapphire standing}, le famiglie di piani caratterizzanti la singola cristallinità di ogni campione.
+
+La figura \ref{fig: plots} mette in risalto la qualità non ottimale dell'esito delle rilevazioni XRD dei campioni III e VI, probabilmente dovuta a una falla nell'acquisizione dei dati o a una crescita del film non ideale.
+
+Tirando le somme, la riuscita dell'esperienza lascia spazio soltanto al desiderio di estrarre diffrattogrammi più accurati, ovvero con un numero di conteggi medio più elevato, per i casi di studio che hanno risentito di un rapporto segnale rumore al limite dell'accettabilità.
 
 
 \onecolumn
 \newpage
 \printbibliography
+
+\newpage
+\section*{Appendice}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width = 1\linewidth]{../plot_allofit.pdf}
+    \caption{Diffrattogrammi XRD, acquisiti secondo geometria Bragg-Brentano, di film sottili di zaffiro, in fase di singolo cristallo; necessitano di particolare attenzione i campioni IV e VI che condividono la stessa orientazione N.}
+    \label{fig: plots raw}
+\end{figure}
+
 
 
 \end{document}
