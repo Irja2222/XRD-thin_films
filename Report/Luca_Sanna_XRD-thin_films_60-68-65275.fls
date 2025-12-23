@@ -1,7 +1,7 @@
 PWD c:\Users\lucas\Documents\Corso_di_Laurea_Magistrale_in_Fisica\Laboratorio di Struttura della Materia\XRD-thin_films\Report
 INPUT C:\Users\lucas\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\lucas\Documents\Corso_di_Laurea_Magistrale_in_Fisica\Laboratorio di Struttura della Materia\XRD-thin_films\Report\Luca_Sanna_XRD-powder_60-68-65275.tex
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.log
+INPUT c:\Users\lucas\Documents\Corso_di_Laurea_Magistrale_in_Fisica\Laboratorio di Struttura della Materia\XRD-thin_films\Report\Luca_Sanna_XRD-thin_films_60-68-65275.tex
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.log
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -223,10 +223,10 @@ INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.aux
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.aux
-INPUT Luca_Sanna_XRD-powder_60-68-65275.aux
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.aux
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.aux
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.aux
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.aux
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.aux
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -244,20 +244,20 @@ INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\italia
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.bcf
-INPUT Luca_Sanna_XRD-powder_60-68-65275.bbl
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.bbl
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.bbl
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.bbl
-INPUT Luca_Sanna_XRD-powder_60-68-65275.bbl
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.out
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.pdf
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.bcf
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.bbl
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.bbl
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.bbl
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.bbl
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.bbl
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.out
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.pdf
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2074.tfm
 INPUT C:\Users\lucas\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
@@ -380,11 +380,11 @@ INPUT ..\plot_allofit.pdf
 INPUT ..\plot_allofit.pdf
 INPUT ..\plot_allofit.pdf
 INPUT ..\plot_allofit.pdf
-INPUT Luca_Sanna_XRD-powder_60-68-65275.aux
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT .\Luca_Sanna_XRD-powder_60-68-65275.out
-INPUT Luca_Sanna_XRD-powder_60-68-65275.run.xml
-OUTPUT Luca_Sanna_XRD-powder_60-68-65275.run.xml
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.aux
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT .\Luca_Sanna_XRD-thin_films_60-68-65275.out
+INPUT Luca_Sanna_XRD-thin_films_60-68-65275.run.xml
+OUTPUT Luca_Sanna_XRD-thin_films_60-68-65275.run.xml
 INPUT C:\Users\lucas\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\lucas\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\lucas\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk

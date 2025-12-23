@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bcf</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bbl</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -65,19 +65,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>Luca_Sanna_XRD-powder_60-68-65275</infile>
+      <infile>Luca_Sanna_XRD-thin_films_60-68-65275</infile>
     </cmdline>
     <input>
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bcf</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bcf</file>
     </input>
     <output>
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bbl</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bbl</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Luca_Sanna_XRD-powder_60-68-65275.bcf</file>
+      <file>Luca_Sanna_XRD-thin_films_60-68-65275.bcf</file>
     </requires>
     <requires type="editable">
       <file>citations.bib</file>
